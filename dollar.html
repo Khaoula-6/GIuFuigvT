@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styledollar.css">
+        <title>Gift Card</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar  navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+
+                    <div class="navbar navbar-expand-xl">
+                        <a class="navbar-brand text-warning" href="#">Hallopick</a>
+                    </div>
+
+                    <div class="btn-group dropstart"> 
+                        <button
+                            type="button"
+                            class="btn btn-warning dropdown-toggle"  
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">   <!--lorsque le panneau est déplié.--> <!--toggle permet d'afficher-->
+
+                            <span class="navbar-toggler-icon"></span> <!--sert à afficher un icône-->
+
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#histoire">Histoire</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#themes">Thèmes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+             </div>
+                </nav>
+
+                <!--fin nav-->
+
+              <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!--ch haja--><form id="myForm" action="submit.php" method="POST"> <input type="submit" value="Get it now"></form>
+                        <a href="https://www.pinterest.com/business/hub/" id="submitLink"></a>
+                    </div>
+                </div>
+               
+              </div>
+
+            </header>
+            <section id="histoire">
+                <h1>FREE</h1>
+                <h2>Gift Card</h2>
+
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-4 my-4 text-light paragrapheun">
+                            <p>
+                               
+                              
+                        </div>
+                        <div class="col-sm-2 col-md-3 ms-0 chat">
+                            <img src="" alt="image d'un chat devant la lune">
+                        </div>
+                        <div class="col-sm-2 col-md-4 text-light paragraphedeux">
+                            <p> 
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="themes">
+                <h2 class="titre-theme">Des thèmes connus</h2>
+                <div
+                    id="carouselExampleControls"
+                    class="carousel slide"
+                    data-bs-ride="carousel">
+                 
+                    <div class="carousel-inner"> <!--on va créer l'intérieur du carousel-->
+                        <div class="carousel-item active"> <!--on va mettre l'image et on ajoute "active" pour faire apparaître cette diapo en premier-->
+                          <img src="images/sorciere.jpg" class="d-block w-100" alt="image d'une sorcière devant la lune"> <!--d-block = display:block-->
+                        </div>
+                        <div class="carousel-item"> 
+                          <img src="images/citrouilledecoration.jpg" class="d-block w-100" alt="image d'une citrouille">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/fantomechien.png" class="d-block w-100" alt="image d'un chien fantôme ">
+                        </div>
+                      </div>
+                      <!--on va créer dessous les flèches gauche et droite-->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls" 
+                        data-bs-slide="prev">
+                         <!--data-bs-target: id de l'élément carousel--> <!-- data-bs-slide : modifie la position de la diapositive (left ou right) par rapport à sa position actuelle.-->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!--Ajoute un bouton gauche au carousel-->
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!--partie contact-->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <h2>Nous contacter</h2>
+                        <div class=" col-sm-12 col-md-3">
+                            <label for="exampleFormControlInput1" class="form-label">Votre adresse email</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="name@exemple.com">
+                        </div>
+                        <div class="col-12" >
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="votre message"></textarea>
+                        </div>
+                        <div class="mt-5 contact-message">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Script Bootstrap-->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+                
+        </body>
+    </html>
+
+    <!--Lien photos -
+   - Photo du chat sur la lune:
+    https://www.pexels.com/fr-fr/photo/photographie-de-chat-a-la-pleine-lune-35888/
+   - Photo du chien phantôme :
+    Photo de Susan Flores: https://www.pexels.com/fr-fr/photo/fantasma-13128727/
+   -Image de la sorcière :
+    https://pixabay.com/images/id-6730731/
+   -Image citrouille : 
+    https://pixabay.com/images/id-2892303/
+   - Image château :
+   https://pixabay.com/images/id-5159011/
+   -Lien texte : https://fr.wikipedia.org/wiki/Halloween 
+    -->
